@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BrowserTest {
 
-	static String browser = "edge";
+	static String browser = "firefox";
 	static WebDriver driver;
 	public static void main(String[] args) throws InterruptedException {
 		
