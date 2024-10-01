@@ -25,19 +25,19 @@ public class WebTableDemo {
 		
 		
 		
-		List<WebElement> allRows = driver.findElements(By.xpath("//table[@class='table table-striped mt-3']/tbody/tr"));
+		List<WebElement> allRows = driver.findElements(By.xpath("//table/tbody/tr"));
 		int noOfRows=allRows.size();
 		
 		for(int row=0;row<noOfRows;row++) {
 			int rowValue=row+1;
 			List<WebElement> rowRelatedCols = driver.
-		findElements(By.xpath("//table[@class='table table-striped mt-3']/tbody/tr["+rowValue+"]/td"));//tr[1]/td
+		findElements(By.xpath("//table/tbody/tr["+rowValue+"]/td"));//tr[1]/td
 			int noOfCols= rowRelatedCols.size();
 			
 			for(int col=0;col<noOfCols;col++) {
 				int colValueN=col+1;
 				WebElement colValue=driver.
-			findElement(By.xpath("//table[@class='table table-striped mt-3']/tbody/tr["+rowValue+"]/td["+colValueN+"]"));
+			findElement(By.xpath("//table/tbody/tr["+rowValue+"]/td["+colValueN+"]"));
 				System.out.print(colValue.getText() + " ");
 			}
 			System.out.println();
