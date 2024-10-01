@@ -14,7 +14,7 @@ public class CalenderElement {
 	public static void main(String[] args) {
 		// //div[@class='DayPicker-Month'][1]/div[3]/div[3]/div[3]/div/p[1]
 		
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.makemytrip.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
