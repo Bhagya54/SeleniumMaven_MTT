@@ -1,6 +1,7 @@
 package testngTestcases;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -17,9 +18,12 @@ public class Testcase2 {
 		else {
 			System.out.println("Fail the testcase");
 		}*/
+		
+		
 		//Hard Assert - whenever there is a failure, it terminates the program
-		/*Assert.assertTrue(actualTitle.equals(expectedTitle),"Assert true is failing");
-		Assert.assertEquals(actualTitle,expectedTitle,"Titles are not matching");
+		/*
+		 * Assert.assertTrue(actualTitle.equals(expectedTitle),"Assert true is failing");
+			Assert.assertEquals(actualTitle,expectedTitle,"Titles are not matching");
 		*/
 		
 		
@@ -27,6 +31,7 @@ public class Testcase2 {
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(actualTitle,expectedTitle,"Assert Equals>> Titles are not matching");
 		softAssert.assertTrue(false,"Assert True>> Failure occured");
+		Reporter.log("Soft Assert --  Testcase 2");
 		softAssert.assertAll();
 		
 	
