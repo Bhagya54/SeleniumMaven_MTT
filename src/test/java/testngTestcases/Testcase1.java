@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class Testcase1 {
 	
 	@BeforeTest
-	public void openDBConnection() {
+	public void openDatabaseConnection() {
 		System.out.println("Create DB connection");
 	}
 	

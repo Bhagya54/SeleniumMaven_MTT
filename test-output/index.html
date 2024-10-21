@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Learning_TestNG_Parameterization" class="navigator-link">
-              <span class="suite-name border-passed">Learning TestNG Parameterization</span>
+            <a href="#" panel-name="suite-Learning_TestNG" class="navigator-link">
+              <span class="suite-name border-failed">Learning TestNG</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Learning_TestNG_Parameterization" class="navigator-link ">
-                    <span>C:\Users\91733\git\SeleniumMaven_MTT_Fresh\SeleniumMaven_MTT\parameters.xml</span>
+                  <a href="#" panel-name="test-xml-Learning_TestNG" class="navigator-link ">
+                    <span>C:\Users\91733\git\SeleniumMaven_MTT_Fresh\SeleniumMaven_MTT\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Learning_TestNG_Parameterization" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                  <a href="#" panel-name="testlist-Learning_TestNG" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Learning_TestNG_Parameterization" class="navigator-link ">
+                  <a href="#" panel-name="group-Learning_TestNG" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Learning_TestNG_Parameterization" class="navigator-link ">
+                  <a href="#" panel-name="times-Learning_TestNG" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Learning_TestNG_Parameterization" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Learning_TestNG" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Learning_TestNG_Parameterization" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Learning_TestNG" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Learning_TestNG_Parameterization" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Learning_TestNG" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,36 +92,64 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,  2 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Learning_TestNG" class="hide-methods failed suite-Learning_TestNG"> (hide)</a> <!-- hide-methods failed suite-Learning_TestNG -->
+                      <a href="#" panel-name="suite-Learning_TestNG" class="show-methods failed suite-Learning_TestNG"> (show)</a> <!-- show-methods failed suite-Learning_TestNG -->
+                    </span>
+                    <div class="method-list-content failed suite-Learning_TestNG">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Learning_TestNG" title="testngTestcases.Testcase3" class="method navigator-link" hash-for-method="doUserReg">doUserReg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Learning_TestNG" title="testngTestcases.Testcase2" class="method navigator-link" hash-for-method="verifyTitle">verifyTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Learning_TestNG -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Learning_TestNG" class="hide-methods skipped suite-Learning_TestNG"> (hide)</a> <!-- hide-methods skipped suite-Learning_TestNG -->
+                      <a href="#" panel-name="suite-Learning_TestNG" class="show-methods skipped suite-Learning_TestNG"> (show)</a> <!-- show-methods skipped suite-Learning_TestNG -->
+                    </span>
+                    <div class="method-list-content skipped suite-Learning_TestNG">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Learning_TestNG" title="testngTestcases.Testcase3" class="method navigator-link" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Learning_TestNG" title="testngTestcases.Testcase3" class="method navigator-link" hash-for-method="doSkip">doSkip</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Learning_TestNG -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Learning_TestNG_Parameterization" class="hide-methods passed suite-Learning_TestNG_Parameterization"> (hide)</a> <!-- hide-methods passed suite-Learning_TestNG_Parameterization -->
-                      <a href="#" panel-name="suite-Learning_TestNG_Parameterization" class="show-methods passed suite-Learning_TestNG_Parameterization"> (show)</a> <!-- show-methods passed suite-Learning_TestNG_Parameterization -->
+                      <a href="#" panel-name="suite-Learning_TestNG" class="hide-methods passed suite-Learning_TestNG"> (hide)</a> <!-- hide-methods passed suite-Learning_TestNG -->
+                      <a href="#" panel-name="suite-Learning_TestNG" class="show-methods passed suite-Learning_TestNG"> (show)</a> <!-- show-methods passed suite-Learning_TestNG -->
                     </span>
-                    <div class="method-list-content passed suite-Learning_TestNG_Parameterization">
+                    <div class="method-list-content passed suite-Learning_TestNG">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Learning_TestNG_Parameterization" title="testngTestcases.BrowserCompatibility" class="method navigator-link" hash-for-method="doLogin(username1, password1)">doLogin(username1, password1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Learning_TestNG" title="testngTestcases.Testcase1" class="method navigator-link" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Learning_TestNG_Parameterization" title="testngTestcases.BrowserCompatibility" class="method navigator-link" hash-for-method="doLogin(username2, password2)">doLogin(username2, password2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Learning_TestNG" title="testngTestcases.Testcase1" class="method navigator-link" hash-for-method="doUserReg">doUserReg</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Learning_TestNG_Parameterization" title="testngTestcases.BrowserCompatibility" class="method navigator-link" hash-for-method="doLogin(username1, password1)">doLogin(username1, password1)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Learning_TestNG_Parameterization" title="testngTestcases.BrowserCompatibility" class="method navigator-link" hash-for-method="doLogin(username2, password2)">doLogin(username2, password2)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Learning_TestNG_Parameterization -->
+                    </div> <!-- method-list-content passed suite-Learning_TestNG -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,238 +160,293 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Learning_TestNG_Parameterization" class="panel Learning_TestNG_Parameterization">
-          <div class="suite-Learning_TestNG_Parameterization-class-passed">
+        <div panel-name="suite-Learning_TestNG" class="panel Learning_TestNG">
+          <div class="suite-Learning_TestNG-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testngTestcases.BrowserCompatibility</span>
+              <img src="failed.png"/>
+              <span class="class-name">testngTestcases.Testcase3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="doLogin(username1, password1)">
-                  </a> <!-- doLogin(username1, password1) -->
-                  <span class="method-name">doLogin</span>
-                  <span class="parameters">(username1,password1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doLogin(username2, password2)">
-                  </a> <!-- doLogin(username2, password2) -->
-                  <span class="method-name">doLogin</span>
-                  <span class="parameters">(username2,password2)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doLogin(username1, password1)">
-                  </a> <!-- doLogin(username1, password1) -->
-                  <span class="method-name">doLogin</span>
-                  <span class="parameters">(username1,password1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doLogin(username2, password2)">
-                  </a> <!-- doLogin(username2, password2) -->
-                  <span class="method-name">doLogin</span>
-                  <span class="parameters">(username2,password2)</span>
+                  <a name="doUserReg">
+                  </a> <!-- doUserReg -->
+                  <span class="method-name">doUserReg</span>
+                  <div class="stack-trace">java.lang.AssertionError: User Registration Test is failed intentionally
+	at testngTestcases.Testcase3.doUserReg(Testcase3.java:12)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Learning_TestNG_Parameterization-class-passed -->
-        </div> <!-- panel Learning_TestNG_Parameterization -->
-        <div panel-name="test-xml-Learning_TestNG_Parameterization" class="panel">
+          </div> <!-- suite-Learning_TestNG-class-failed -->
+          <div class="suite-Learning_TestNG-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testngTestcases.Testcase2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTitle">
+                  </a> <!-- verifyTitle -->
+                  <span class="method-name">verifyTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Assert Equals&gt;&gt; Titles are not matching expected [google.com] but found [gmail.com],
+	Assert True&gt;&gt; Failure occured expected [true] but found [false]
+	at testngTestcases.Testcase2.verifyTitle(Testcase2.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Learning_TestNG-class-failed -->
+          <div class="suite-Learning_TestNG-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testngTestcases.Testcase3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin">
+                  </a> <!-- doLogin -->
+                  <span class="method-name">doLogin</span>
+                  <div class="stack-trace">java.lang.Throwable: Method testngTestcases.Testcase3.doLogin() on instance testngTestcases.Testcase3@73eb439a depends on not successfully finished methods 
+[testngTestcases.Testcase3.doUserReg() on instance testngTestcases.Testcase3@73eb439a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doSkip">
+                  </a> <!-- doSkip -->
+                  <span class="method-name">doSkip</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test intentionally
+	at testngTestcases.Testcase3.doSkip(Testcase3.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Learning_TestNG-class-skipped -->
+          <div class="suite-Learning_TestNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testngTestcases.Testcase1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin">
+                  </a> <!-- doLogin -->
+                  <span class="method-name">doLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doUserReg">
+                  </a> <!-- doUserReg -->
+                  <span class="method-name">doUserReg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Learning_TestNG-class-passed -->
+        </div> <!-- panel Learning_TestNG -->
+        <div panel-name="test-xml-Learning_TestNG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91733\git\SeleniumMaven_MTT_Fresh\SeleniumMaven_MTT\parameters.xml</span>
+            <span class="header-content">C:\Users\91733\git\SeleniumMaven_MTT_Fresh\SeleniumMaven_MTT\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Learning TestNG Parameterization&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;testngTestcases.CustomListener&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Chrome Test&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;testsiteURL&quot; value=&quot;https://facebook.com&quot;/&gt;
+&lt;suite name=&quot;Learning TestNG&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testngTestcases.BrowserCompatibility&quot;/&gt;
+      &lt;class name=&quot;testngTestcases.Testcase1&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Firefox Test&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
-    &lt;parameter name=&quot;testsiteURL&quot; value=&quot;https://facebook.com&quot;/&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Assertion Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testngTestcases.BrowserCompatibility&quot;/&gt;
+      &lt;class name=&quot;testngTestcases.Testcase2&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Firefox Test --&gt;
-&lt;/suite&gt; &lt;!-- Learning TestNG Parameterization --&gt;
+  &lt;/test&gt; &lt;!-- Assertion Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Depends On Method Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testngTestcases.Testcase3&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Depends On Method Test --&gt;
+&lt;/suite&gt; &lt;!-- Learning TestNG --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Learning_TestNG_Parameterization" class="panel">
+        <div panel-name="testlist-Learning_TestNG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Learning TestNG Parameterization</span>
+            <span class="header-content">Tests for Learning TestNG</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Chrome Test (1 class)</span>
+                <span class="test-name">Login Test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Firefox Test (1 class)</span>
+                <span class="test-name">Assertion Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Depends On Method Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Learning_TestNG_Parameterization" class="panel">
+        <div panel-name="group-Learning_TestNG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Learning TestNG Parameterization</span>
+            <span class="header-content">Groups for Learning TestNG</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Learning_TestNG_Parameterization" class="panel">
+        <div panel-name="times-Learning_TestNG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Learning TestNG Parameterization</span>
+            <span class="header-content">Times for Learning TestNG</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Learning_TestNG_Parameterization');
-function tableData_Learning_TestNG_Parameterization() {
+suiteTableInitFunctions.push('tableData_Learning_TestNG');
+function tableData_Learning_TestNG() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'doLogin')
-data.setCell(0, 2, 'testngTestcases.BrowserCompatibility')
-data.setCell(0, 3, 1026);
+data.setCell(0, 1, 'verifyTitle')
+data.setCell(0, 2, 'testngTestcases.Testcase2')
+data.setCell(0, 3, 11);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'doLogin')
-data.setCell(1, 2, 'testngTestcases.BrowserCompatibility')
-data.setCell(1, 3, 1017);
+data.setCell(1, 1, 'doUserReg')
+data.setCell(1, 2, 'testngTestcases.Testcase1')
+data.setCell(1, 3, 10);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'doLogin')
-data.setCell(2, 2, 'testngTestcases.BrowserCompatibility')
-data.setCell(2, 3, 864);
+data.setCell(2, 2, 'testngTestcases.Testcase1')
+data.setCell(2, 3, 3);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'doLogin')
-data.setCell(3, 2, 'testngTestcases.BrowserCompatibility')
-data.setCell(3, 3, 833);
-window.suiteTableData['Learning_TestNG_Parameterization']= { tableData: data, tableDiv: 'times-div-Learning_TestNG_Parameterization'}
+data.setCell(3, 1, 'doUserReg')
+data.setCell(3, 2, 'testngTestcases.Testcase3')
+data.setCell(3, 3, 2);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'doSkip')
+data.setCell(4, 2, 'testngTestcases.Testcase3')
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'doLogin')
+data.setCell(5, 2, 'testngTestcases.Testcase3')
+data.setCell(5, 3, 0);
+window.suiteTableData['Learning_TestNG']= { tableData: data, tableDiv: 'times-div-Learning_TestNG'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
-              <div id="times-div-Learning_TestNG_Parameterization">
-              </div> <!-- times-div-Learning_TestNG_Parameterization -->
+              <span class="suite-total-time">Total running time: 28 ms</span>
+              <div id="times-div-Learning_TestNG">
+              </div> <!-- times-div-Learning_TestNG -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Learning_TestNG_Parameterization" class="panel">
+        <div panel-name="reporter-Learning_TestNG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Learning TestNG Parameterization</span>
+            <span class="header-content">Reporter output for Learning TestNG</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">doLogin(username1, password1)</span>
+              <span class="reporter-method-name">doUserReg</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test has been started: doLogin</span>
-                <span class="reporter-method-output">Testcase passed: doLogin</span>
+                <span class="reporter-method-output">Inside User Reg Test --  Testcase 1</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">doLogin(username2, password2)</span>
+              <span class="reporter-method-name">verifyTitle</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test has been started: doLogin</span>
-                <span class="reporter-method-output">Testcase passed: doLogin</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">doLogin(username1, password1)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test has been started: doLogin</span>
-                <span class="reporter-method-output">Testcase passed: doLogin</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">doLogin(username2, password2)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test has been started: doLogin</span>
-                <span class="reporter-method-output">Testcase passed: doLogin</span>
+                <span class="reporter-method-output">Soft Assert --  Testcase 2</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Learning_TestNG_Parameterization" class="panel">
+        <div panel-name="ignored-methods-Learning_TestNG" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Learning_TestNG_Parameterization" class="panel">
+        <div panel-name="chronological-Learning_TestNG" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testngTestcases.BrowserCompatibility</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome, https://facebook.com)</span>
+              <div class="chronological-class-name">testngTestcases.Testcase1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openDBConnection</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">39 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">doLogin(username1, password1)</span>
-                <span class="method-start">2773 ms</span>
+                <span class="method-name">doUserReg</span>
+                <span class="method-start">40 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">3803 ms</span>
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">54 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome, https://facebook.com)</span>
-                <span class="method-start">3943 ms</span>
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">58 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">doLogin(username2, password2)</span>
-                <span class="method-start">6209 ms</span>
+                <span class="method-name">doLogin</span>
+                <span class="method-start">59 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">7228 ms</span>
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">64 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser(firefox, https://facebook.com)</span>
-                <span class="method-start">7418 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDBConnection</span>
+                <span class="method-start">65 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testngTestcases.Testcase2</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">doLogin(username1, password1)</span>
-                <span class="method-start">11305 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTitle</span>
+                <span class="method-start">154 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">12171 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser(firefox, https://facebook.com)</span>
-                <span class="method-start">13218 ms</span>
-              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testngTestcases.Testcase3</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">doLogin(username2, password2)</span>
-                <span class="method-start">17080 ms</span>
+                <span class="method-name">doSkip</span>
+                <span class="method-start">181 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">17913 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">doUserReg</span>
+                <span class="method-start">185 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
