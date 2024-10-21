@@ -1,250 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="2" failed="2" skipped="2">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Inside User Reg Test --  Testcase 1]]>
+      <![CDATA[Test has been started: doLogin]]>
     </line>
     <line>
-      <![CDATA[Inside Login Test --  Testcase 1]]>
+      <![CDATA[Testcase passed: doLogin]]>
     </line>
     <line>
-      <![CDATA[<a href="C:\Users\Bhagya_Kudupudi\Desktop\newyear.png" target="blank">Screenshot link</a>]]>
+      <![CDATA[Test has been started: doLogin]]>
     </line>
     <line>
-      <![CDATA[<br>]]>
+      <![CDATA[Testcase passed: doLogin]]>
     </line>
     <line>
-      <![CDATA[<a href="C:\Users\Bhagya_Kudupudi\Desktop\newyear.png" target="blank"><img src="C:\Users\Bhagya_Kudupudi\Desktop\newyear.png" width=200 height=200 /></a>]]>
+      <![CDATA[Test has been started: doLogin]]>
     </line>
     <line>
-      <![CDATA[Soft Assert --  Testcase 2]]>
+      <![CDATA[Testcase passed: doLogin]]>
+    </line>
+    <line>
+      <![CDATA[Test has been started: doLogin]]>
+    </line>
+    <line>
+      <![CDATA[Testcase passed: doLogin]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-10-18T16:36:22 IST" name="Learning TestNG" finished-at="2024-10-18T16:36:23 IST" duration-ms="399">
+  <suite started-at="2024-10-21T14:59:57 IST" name="Learning TestNG Parameterization" finished-at="2024-10-21T15:00:16 IST" duration-ms="18917">
     <groups>
     </groups>
-    <test started-at="2024-10-18T16:36:22 IST" name="Login Test" finished-at="2024-10-18T16:36:22 IST" duration-ms="123">
-      <class name="testngTestcases.Testcase1">
-        <test-method is-config="true" signature="openDBConnection()[pri:0, instance:testngTestcases.Testcase1@62379589]" started-at="2024-10-18T16:36:22 IST" name="openDBConnection" finished-at="2024-10-18T16:36:22 IST" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openDBConnection -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testngTestcases.Testcase1@62379589]" started-at="2024-10-18T16:36:22 IST" name="launchBrowser" finished-at="2024-10-18T16:36:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="doUserReg()[pri:-22, instance:testngTestcases.Testcase1@62379589]" started-at="2024-10-18T16:36:22 IST" name="doUserReg" finished-at="2024-10-18T16:36:22 IST" duration-ms="15" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Inside User Reg Test --  Testcase 1]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- doUserReg -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testngTestcases.Testcase1@62379589]" started-at="2024-10-18T16:36:22 IST" name="closeBrowser" finished-at="2024-10-18T16:36:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testngTestcases.Testcase1@62379589]" started-at="2024-10-18T16:36:22 IST" name="launchBrowser" finished-at="2024-10-18T16:36:22 IST" duration-ms="1" status="PASS">
+    <test started-at="2024-10-21T14:59:57 IST" name="Chrome Test" finished-at="2024-10-21T15:00:04 IST" duration-ms="7403">
+      <class name="testngTestcases.BrowserCompatibility">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:testngTestcases.BrowserCompatibility@2eae8e6e]" started-at="2024-10-21T14:59:57 IST" name="launchBrowser" finished-at="2024-10-21T15:00:00 IST" duration-ms="2772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://facebook.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="doLogin()[pri:-12, instance:testngTestcases.Testcase1@62379589]" started-at="2024-10-18T16:36:22 IST" name="doLogin" finished-at="2024-10-18T16:36:22 IST" duration-ms="5" status="PASS">
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testngTestcases.BrowserCompatibility@2eae8e6e]" started-at="2024-10-21T15:00:00 IST" name="doLogin" data-provider="getData" finished-at="2024-10-21T15:00:01 IST" duration-ms="1026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[Inside Login Test --  Testcase 1]]>
+              <![CDATA[Test has been started: doLogin]]>
             </line>
             <line>
-              <![CDATA[<a href="C:\Users\Bhagya_Kudupudi\Desktop\newyear.png" target="blank">Screenshot link</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a href="C:\Users\Bhagya_Kudupudi\Desktop\newyear.png" target="blank"><img src="C:\Users\Bhagya_Kudupudi\Desktop\newyear.png" width=200 height=200 /></a>]]>
+              <![CDATA[Testcase passed: doLogin]]>
             </line>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testngTestcases.Testcase1@62379589]" started-at="2024-10-18T16:36:22 IST" name="closeBrowser" finished-at="2024-10-18T16:36:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngTestcases.BrowserCompatibility@2eae8e6e]" started-at="2024-10-21T15:00:01 IST" name="tearDown" finished-at="2024-10-21T15:00:01 IST" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeDBConnection()[pri:0, instance:testngTestcases.Testcase1@62379589]" started-at="2024-10-18T16:36:22 IST" name="closeDBConnection" finished-at="2024-10-18T16:36:22 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:testngTestcases.BrowserCompatibility@2eae8e6e]" started-at="2024-10-21T15:00:01 IST" name="launchBrowser" finished-at="2024-10-21T15:00:03 IST" duration-ms="2266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://facebook.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDBConnection -->
-      </class> <!-- testngTestcases.Testcase1 -->
-    </test> <!-- Login Test -->
-    <test started-at="2024-10-18T16:36:22 IST" name="Assertion Test" finished-at="2024-10-18T16:36:22 IST" duration-ms="41">
-      <class name="testngTestcases.Testcase2">
-        <test-method signature="verifyTitle()[pri:0, instance:testngTestcases.Testcase2@40005471]" started-at="2024-10-18T16:36:22 IST" name="verifyTitle" finished-at="2024-10-18T16:36:22 IST" duration-ms="30" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Assert Equals>> Titles are not matching expected [google.com] but found [gmail.com],
-Assert True>> Failure occured expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Assert Equals>> Titles are not matching expected [google.com] but found [gmail.com],
-Assert True>> Failure occured expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at testngTestcases.Testcase2.verifyTitle(Testcase2.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testngTestcases.BrowserCompatibility@2eae8e6e]" started-at="2024-10-21T15:00:03 IST" name="doLogin" data-provider="getData" finished-at="2024-10-21T15:00:04 IST" duration-ms="1017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[Soft Assert --  Testcase 2]]>
+              <![CDATA[Test has been started: doLogin]]>
+            </line>
+            <line>
+              <![CDATA[Testcase passed: doLogin]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyTitle -->
-      </class> <!-- testngTestcases.Testcase2 -->
-    </test> <!-- Assertion Test -->
-    <test started-at="2024-10-18T16:36:22 IST" name="Depends On Method Test" finished-at="2024-10-18T16:36:23 IST" duration-ms="35">
-      <class name="testngTestcases.Testcase3">
-        <test-method signature="doSkip()[pri:0, instance:testngTestcases.Testcase3@55fe41ea]" started-at="2024-10-18T16:36:23 IST" name="doSkip" finished-at="2024-10-18T16:36:23 IST" duration-ms="2" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping the test intentionally]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test intentionally
-at testngTestcases.Testcase3.doSkip(Testcase3.java:23)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngTestcases.BrowserCompatibility@2eae8e6e]" started-at="2024-10-21T15:00:04 IST" name="tearDown" finished-at="2024-10-21T15:00:04 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doSkip -->
-        <test-method signature="doUserReg()[pri:1, instance:testngTestcases.Testcase3@55fe41ea]" started-at="2024-10-18T16:36:23 IST" name="doUserReg" finished-at="2024-10-18T16:36:23 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[User Registration Test is failed intentionally]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: User Registration Test is failed intentionally
-at org.testng.Assert.fail(Assert.java:111)
-at testngTestcases.Testcase3.doUserReg(Testcase3.java:12)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- testngTestcases.BrowserCompatibility -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2024-10-21T15:00:04 IST" name="Firefox Test" finished-at="2024-10-21T15:00:16 IST" duration-ms="11461">
+      <class name="testngTestcases.BrowserCompatibility">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:testngTestcases.BrowserCompatibility@433defed]" started-at="2024-10-21T15:00:04 IST" name="launchBrowser" finished-at="2024-10-21T15:00:08 IST" duration-ms="3887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://facebook.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doUserReg -->
-        <test-method signature="doLogin()[pri:2, instance:testngTestcases.Testcase3@55fe41ea]" started-at="2024-10-18T16:36:23 IST" name="doLogin" finished-at="2024-10-18T16:36:23 IST" depends-on-methods="testngTestcases.Testcase3.doUserReg" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method testngTestcases.Testcase3.doLogin() on instance testngTestcases.Testcase3@55fe41ea depends on not successfully finished methods 
-[testngTestcases.Testcase3.doUserReg() on instance testngTestcases.Testcase3@55fe41ea]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method testngTestcases.Testcase3.doLogin() on instance testngTestcases.Testcase3@55fe41ea depends on not successfully finished methods 
-[testngTestcases.Testcase3.doUserReg() on instance testngTestcases.Testcase3@55fe41ea]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testngTestcases.BrowserCompatibility@433defed]" started-at="2024-10-21T15:00:08 IST" name="doLogin" data-provider="getData" finished-at="2024-10-21T15:00:09 IST" duration-ms="864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test has been started: doLogin]]>
+            </line>
+            <line>
+              <![CDATA[Testcase passed: doLogin]]>
+            </line>
           </reporter-output>
         </test-method> <!-- doLogin -->
-      </class> <!-- testngTestcases.Testcase3 -->
-    </test> <!-- Depends On Method Test -->
-  </suite> <!-- Learning TestNG -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngTestcases.BrowserCompatibility@433defed]" started-at="2024-10-21T15:00:09 IST" name="tearDown" finished-at="2024-10-21T15:00:10 IST" duration-ms="1047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:testngTestcases.BrowserCompatibility@433defed]" started-at="2024-10-21T15:00:10 IST" name="launchBrowser" finished-at="2024-10-21T15:00:14 IST" duration-ms="3858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://facebook.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testngTestcases.BrowserCompatibility@433defed]" started-at="2024-10-21T15:00:14 IST" name="doLogin" data-provider="getData" finished-at="2024-10-21T15:00:15 IST" duration-ms="833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test has been started: doLogin]]>
+            </line>
+            <line>
+              <![CDATA[Testcase passed: doLogin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngTestcases.BrowserCompatibility@433defed]" started-at="2024-10-21T15:00:15 IST" name="tearDown" finished-at="2024-10-21T15:00:16 IST" duration-ms="963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testngTestcases.BrowserCompatibility -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- Learning TestNG Parameterization -->
 </testng-results>

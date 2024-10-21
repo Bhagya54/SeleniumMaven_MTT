@@ -52,18 +52,18 @@ public class FacebookReadProperties {
 
 	}
 
-	static void click(String keyword) {
+	public static void click(String keyword) {
 
 		getWebElement(keyword).click();
 	}
 
-	static void type(String keyword, String value) {
+	public static void type(String keyword, String value) {
 
 		getWebElement(keyword).sendKeys(value);
 
 	}
 
-	static WebElement getWebElement(String keyword) {
+	public static WebElement getWebElement(String keyword) {
 
 		WebElement ele = null;
 		if (keyword.endsWith("_ID")) {
