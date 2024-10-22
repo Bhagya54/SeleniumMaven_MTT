@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Learning TestNG Parameterization">
-  <listeners>
-  <listener class-name="testngTestcases.CustomListener"></listener>
-  </listeners>
-  
-  <test  name="Chrome Test">
-  <parameter name="browserName" value="chrome"></parameter>
-  <parameter name="testsiteURL" value="https://facebook.com"></parameter>
-    <classes>
-            <class name="testngTestcases.BrowserCompatibility"/>
-    </classes>
-  </test>
-  
-  <test  name="Firefox Test">
-  <parameter name="browserName" value="firefox"></parameter>
-  <parameter name="testsiteURL" value="https://facebook.com"></parameter>
-    <classes>
-      <class name="testngTestcases.BrowserCompatibility"/>
-      
-    </classes>
-  </test>
-  
- </suite> <!-- Suite -->
+<suite name="Learning TestNG_ Parameters" parallel="tests">
+
+	<listeners>
+		<listener class-name="testngTestcases.CustomListener"></listener>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+	</listeners>
+
+
+	<test name="Chrome Test">
+	<parameter name="browserName" value="chrome"></parameter>
+	<parameter name="siteURL" value="http://google.com"></parameter>	
+		
+		<classes>
+
+			<class name="testngTestcases.Parameterization" />
+
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Firefox Test">
+	<parameter name="browserName" value="firefox"></parameter>
+	<parameter name="siteURL" value="http://gmail.com"></parameter>
+		<classes>
+
+			<class name="testngTestcases.Parameterization" />
+
+		</classes>
+	</test>
+</suite> <!-- Suite -->

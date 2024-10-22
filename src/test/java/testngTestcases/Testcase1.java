@@ -28,7 +28,7 @@ public class Testcase1 {
 		System.out.println("close the browser");
 	}
 	
-	@Test(priority=-22)
+	@Test(priority=-22,groups = {"smoke"})
 	public void doUserReg() {
 		System.out.println("User Reg Test");
 		Reporter.log("Inside User Reg Test --  Testcase 1");
