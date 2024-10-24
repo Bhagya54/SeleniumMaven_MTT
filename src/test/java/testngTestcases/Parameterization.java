@@ -1,5 +1,7 @@
 package testngTestcases;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -9,13 +11,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import utility.ReadProperties;
+
 public class Parameterization {
 	
 	WebDriver driver;
 	
 	@Parameters({"browserName","siteURL"})
 	@BeforeMethod
-	public void launchBrowser(String browser,String url)
+	public void launchBrowser(String browser,String url) throws IOException
 	{
 		if(browser.equals("chrome")) {
 			driver=new ChromeDriver();
