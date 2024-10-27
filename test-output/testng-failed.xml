@@ -8,6 +8,7 @@
       <class name="testngTestcases.DataProviderDemo">
         <methods>
           <include name="doLogin" invocation-numbers="0 1 2"/>
+          <include name="tearDown"/>
           <include name="lauchBrowser"/>
         </methods>
       </class> <!-- testngTestcases.DataProviderDemo -->
