@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngTestcases.Testcase3">
+      <class name="day22.ExtentReportsDemo">
         <methods>
+          <include name="tearDown"/>
           <include name="doUserReg"/>
+          <include name="setReports"/>
+          <include name="getResult"/>
           <include name="doSkip"/>
-          <include name="doLogin"/>
         </methods>
-      </class> <!-- testngTestcases.Testcase3 -->
+      </class> <!-- day22.ExtentReportsDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
