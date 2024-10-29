@@ -8,70 +8,19 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,124</td><td></td><td></td></tr>
+<tr><th colspan="8">Learning TestNG</th></tr>
+<tr><td><a href="#t0">Extent report Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">97</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">day22.ExtentReportsDemo</td><td><a href="#m0">doUserReg</a></td><td rowspan="1">1730116547363</td><td rowspan="1">8</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">day22.ExtentReportsDemo</td><td><a href="#m1">doSkip</a></td><td rowspan="1">1730116547353</td><td rowspan="1">3</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">day22.ExtentReportsDemo</td><td><a href="#m2">doLogin</a></td><td rowspan="1">1730116547307</td><td rowspan="1">30</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Learning TestNG</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Extent report Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">day22.ExtentReportsDemo2</td><td><a href="#m0">doUserReg</a></td><td rowspan="1">1730184529069</td><td rowspan="1">5</td></tr><tr><th colspan="4">Extent report Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">day22.ExtentReportsDemo2</td><td><a href="#m1">doSkip</a></td><td rowspan="1">1730184529063</td><td rowspan="1">3</td></tr><tr><th colspan="4">Extent report Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">day22.ExtentReportsDemo2</td><td><a href="#m2">doLogin</a></td><td rowspan="1">1730184529036</td><td rowspan="1">17</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">day22.ExtentReportsDemo#doUserReg</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: User Reg is failed
-	at org.testng.Assert.fail(Assert.java:111)
-	at day22.ExtentReportsDemo.doUserReg(ExtentReportsDemo.java:62)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+<h2>Extent report Test</h2><h3 id="m0">day22.ExtentReportsDemo2#doUserReg</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test case started: doUserReg<br/>Testcase is being failed : doUserReg<br/><a href="C:\Users\91733\OneDrive\Desktop\new.png" target="blank">Screenshot link</a><br/><br><br/><a href="C:\Users\91733\OneDrive\Desktop\new.png" target="blank"><img src="C:\Users\91733\OneDrive\Desktop\new.png" width=200 height=200 /></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: User Reg is failed
+	at day22.ExtentReportsDemo2.doUserReg(ExtentReportsDemo2.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">day22.ExtentReportsDemo#doSkip</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Intentianally skipping the test
-	at day22.ExtentReportsDemo.doSkip(ExtentReportsDemo.java:71)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">day22.ExtentReportsDemo2#doSkip</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test case started: doSkip<br/>Testcase has been skipped : doSkip</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Intentianally skipping the test
+	at day22.ExtentReportsDemo2.doSkip(ExtentReportsDemo2.java:43)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">day22.ExtentReportsDemo#doLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">day22.ExtentReportsDemo2#doLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test case started: doLogin<br/>Test case passed: doLogin</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
