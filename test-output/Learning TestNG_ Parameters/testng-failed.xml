@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Learning TestNG_ Parameters]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
+<suite name="Failed suite [Learning TestNG_ Parameters]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome Test(failed)">
     <parameter name="siteURL" value="http://facebook.com"/>
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="testngTestcases.DataProviderDemo">
+      <class name="rough.DataProviderDemo">
         <methods>
-          <include name="doLogin" invocation-numbers="0 1 2"/>
-          <include name="tearDown"/>
           <include name="lauchBrowser"/>
+          <include name="tearDown"/>
+          <include name="doLogin" invocation-numbers="3"/>
         </methods>
-      </class> <!-- testngTestcases.DataProviderDemo -->
+      </class> <!-- rough.DataProviderDemo -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Learning TestNG_ Parameters] -->

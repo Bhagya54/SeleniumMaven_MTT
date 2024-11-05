@@ -15,6 +15,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import utility.ExcelReader;
 import utility.KeywordDemo;
 
 
@@ -66,16 +67,28 @@ public class DataProviderDemo {
 	
 	@DataProvider(name="Data")
 	public Object[][] getData(){
-		Object[][] credentials = new Object[3][2];
-		credentials[0][0] = "username1";
-		credentials[0][1] = "password1";
 		
-		credentials[1][0] = "username2";
-		credentials[1][1] = "password2";
+		ExcelReader excel = new ExcelReader("./src/test/resources/excel/testData.xlsx");
+		String sheetName="login";
+		int noOfRows = excel.getRowCount(sheetName);//3
+		int noOfCols = excel.getColumnCount(sheetName);//2
 		
-		credentials[2][0] = "username3";
-		credentials[2][1] = "password3";
+		Object[][] credentials = new Object[noOfRows-1][noOfCols];
 		
+		for(int row=2;row<=noOfRows;row++) {//3
+			for(int col = 0;col<noOfCols;col++) {
+				credentials[row-2][col] = excel.getCellData(sheetName, col,row);//0,2
+			}
+		}
+		/*
+		 * credentials[0][0] = excel.getCellData(sheetName, 0,2); credentials[0][1] =
+		 * excel.getCellData(sheetName,1,2);
+		 * 
+		 * credentials[1][0] = excel.getCellData(sheetName, 0, 3); credentials[1][1] =
+		 * excel.getCellData(sheetName, 1, 3);
+		 */
+		
+			
 		return credentials;
 	}
 	

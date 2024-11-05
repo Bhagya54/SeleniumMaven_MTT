@@ -42,14 +42,14 @@ public class KeywordDemo {
 
 		getWebElement(keyword).click();
 		log.info("Clicked on : " + keyword);
-		ExtentListeners.test.info("Clicked on : " + keyword);
+		//ExtentListeners.test.info("Clicked on : " + keyword);
 	}
 
 	public void type(String keyword, String value) {
 
 		getWebElement(keyword).sendKeys(value);
 		log.info("Typed in the textbox: " + keyword + " with value as : " + value);
-		ExtentListeners.test.info("Typed in the textbox: " + keyword + " with value as : " + value);
+		//ExtentListeners.test.info("Typed in the textbox: " + keyword + " with value as : " + value);
 	
 	}
 
