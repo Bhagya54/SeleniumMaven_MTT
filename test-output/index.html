@@ -50,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Learning_TestNG__Parameters" class="navigator-link ">
-                    <span>C:\Users\91733\git\SeleniumMaven_MTT_1\dataprovider2.xml</span>
+                    <span>C:\Users\91733\git\SeleniumMaven_MTT_1\grid.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Learning_TestNG__Parameters" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,17 @@
                     <div class="method-list-content passed suite-Learning_TestNG__Parameters">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Learning_TestNG__Parameters" title="testngTestcases.DataProviderDemo" class="method navigator-link" hash-for-method="doLogin(user2, password2)">doLogin(user2, password2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Learning_TestNG__Parameters" title="seleniumgrid.SeleniumGridDemo" class="method navigator-link" hash-for-method="launchBrowser(chrome, http://google.com)">launchBrowser(chrome, http://google.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Learning_TestNG__Parameters" title="testngTestcases.DataProviderDemo" class="method navigator-link" hash-for-method="doLogin(user1, password1)">doLogin(user1, password1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Learning_TestNG__Parameters" title="seleniumgrid.SeleniumGridDemo" class="method navigator-link" hash-for-method="launchBrowser(Edge, http://google.com)">launchBrowser(Edge, http://google.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Learning_TestNG__Parameters" title="seleniumgrid.SeleniumGridDemo" class="method navigator-link" hash-for-method="launchBrowser(firefox, http://google.com)">launchBrowser(firefox, http://google.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Learning_TestNG__Parameters -->
@@ -126,23 +131,31 @@
           <div class="suite-Learning_TestNG__Parameters-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testngTestcases.DataProviderDemo</span>
+              <span class="class-name">seleniumgrid.SeleniumGridDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="doLogin(user2, password2)">
-                  </a> <!-- doLogin(user2, password2) -->
-                  <span class="method-name">doLogin</span>
-                  <span class="parameters">(user2,password2)</span>
+                  <a name="launchBrowser(chrome, http://google.com)">
+                  </a> <!-- launchBrowser(chrome, http://google.com) -->
+                  <span class="method-name">launchBrowser</span>
+                  <span class="parameters">(chrome,http://google.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="doLogin(user1, password1)">
-                  </a> <!-- doLogin(user1, password1) -->
-                  <span class="method-name">doLogin</span>
-                  <span class="parameters">(user1,password1)</span>
+                  <a name="launchBrowser(Edge, http://google.com)">
+                  </a> <!-- launchBrowser(Edge, http://google.com) -->
+                  <span class="method-name">launchBrowser</span>
+                  <span class="parameters">(Edge,http://google.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchBrowser(firefox, http://google.com)">
+                  </a> <!-- launchBrowser(firefox, http://google.com) -->
+                  <span class="method-name">launchBrowser</span>
+                  <span class="parameters">(firefox,http://google.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -150,20 +163,38 @@
         </div> <!-- panel Learning_TestNG__Parameters -->
         <div panel-name="test-xml-Learning_TestNG__Parameters" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91733\git\SeleniumMaven_MTT_1\dataprovider2.xml</span>
+            <span class="header-content">C:\Users\91733\git\SeleniumMaven_MTT_1\grid.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Learning TestNG_ Parameters&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Chrome Test&quot;&gt;
-    &lt;parameter name=&quot;siteURL&quot; value=&quot;http://facebook.com&quot;/&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Learning TestNG_ Parameters&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testngTestcases.CustomListener&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Chrome Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;http://google.com&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testngTestcases.DataProviderDemo&quot;/&gt;
+      &lt;class name=&quot;seleniumgrid.SeleniumGridDemo&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Chrome Test --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Firefox Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;http://google.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;seleniumgrid.SeleniumGridDemo&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Firefox Test --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Edge Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;http://google.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;seleniumgrid.SeleniumGridDemo&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Edge Test --&gt;
 &lt;/suite&gt; &lt;!-- Learning TestNG_ Parameters --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,6 +207,12 @@
             <ul>
               <li>
                 <span class="test-name">Chrome Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Firefox Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Edge Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,20 +238,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'doLogin')
-data.setCell(0, 2, 'testngTestcases.DataProviderDemo')
-data.setCell(0, 3, 1008);
+data.setCell(0, 1, 'launchBrowser')
+data.setCell(0, 2, 'seleniumgrid.SeleniumGridDemo')
+data.setCell(0, 3, 20251);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'doLogin')
-data.setCell(1, 2, 'testngTestcases.DataProviderDemo')
-data.setCell(1, 3, 912);
+data.setCell(1, 1, 'launchBrowser')
+data.setCell(1, 2, 'seleniumgrid.SeleniumGridDemo')
+data.setCell(1, 3, 11106);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'launchBrowser')
+data.setCell(2, 2, 'seleniumgrid.SeleniumGridDemo')
+data.setCell(2, 3, 10377);
 window.suiteTableData['Learning_TestNG__Parameters']= { tableData: data, tableDiv: 'times-div-Learning_TestNG__Parameters'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Learning_TestNG__Parameters">
               </div> <!-- times-div-Learning_TestNG__Parameters -->
             </div> <!-- times-div -->
@@ -225,6 +266,27 @@ return data;
             <span class="header-content">Reporter output for Learning TestNG_ Parameters</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">launchBrowser(chrome, http://google.com)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test case started: launchBrowser</span>
+                <span class="reporter-method-output">Test case passed: launchBrowser</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">launchBrowser(Edge, http://google.com)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test case started: launchBrowser</span>
+                <span class="reporter-method-output">Test case passed: launchBrowser</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">launchBrowser(firefox, http://google.com)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test case started: launchBrowser</span>
+                <span class="reporter-method-output">Test case passed: launchBrowser</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Learning_TestNG__Parameters" class="panel">
@@ -240,31 +302,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testngTestcases.DataProviderDemo</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">lauchBrowser(chrome, http://facebook.com)</span>
+              <div class="chronological-class-name">seleniumgrid.SeleniumGridDemo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">launchBrowser(chrome, http://google.com)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">doLogin(user1, password1)</span>
-                <span class="method-start">12645 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13562 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">lauchBrowser(chrome, http://facebook.com)</span>
-                <span class="method-start">13739 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">doLogin(user2, password2)</span>
-                <span class="method-start">18656 ms</span>
+                <span class="method-name">launchBrowser(firefox, http://google.com)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">19667 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">launchBrowser(Edge, http://google.com)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
